@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,600;1,800&display=swap" rel="stylesheet">
+    <title> M&R Advogados</title>
+</head>
+
+<body>
+    <div class="top-box">
+        <header class="header-box">
+            <h2 class="title-header"> M&R Advogados </h2>
+            <a href="#bottom-title" class="link-header"> Quem somos </a>
+            <a href="#middle-title" class="link-header"> Serviços </a>
+            <a class="link-header" onclick="chameOFormulario()"> Contato </a>
+        </header>
+
+
+        <section>
+            <h1> M&R Advogados </h1>
+            <p class="text"> Que a justiça seja feita, e vamos garantir que seja!</p>
+        </section>
+
+
+
+        <form id="formulario-contato" action="https://formsubmit.co/eduardamarinho09@gmail.com" method="POST">
+            <h3 class="title-form">Entre em contato</h3>
+
+            <label>
+                Nome
+                <input type="text" name="name" placeholder="Digite seu nome" required />
+            </label>
+
+            <label>
+                Email
+                <input type="text" name="email" placeholder="Digite seu email" required />
+            </label>
+
+            <label>
+                Whatsapp
+                <input type="tel" name="telefone" placeholder="Digite seu telefone" required />
+            </label>
+
+            <label>
+                Fale Conosco
+                <textarea name="info" placeholder="Qual sua dúvida?"></textarea>
+            </label>
+
+            <button type="submit"> Enviar </button>
+        </form>
+    </div>
+
+
+    <h2 id="middle-title"> Nossos Serviços </h2>
+
+
+    <section class=" box-center">
+        <div class="card">
+            <h3 class="title-card"> Direito Cível </h3>
+
+            <ul>
+                <li>Assessoria, elaboração e revisão de contratos civis.</li>
+                <li>Recuperação de créditos através de medidas administrativas e judiciais, entre estas, propositura de
+                    ações de execução, ações de cobrança, ações monitórias, ações de busca e apreensão, requerimento de
+                    falências, habilitação de créditos e impugnação de créditos declarados.</li>
+                <li>Renegociação de contratos.</li>
+                <li>Danos morais.</li>
+                <li>Ação anulatória.</li>
+            </ul>
+        </div>
+
+
+        <div class="card">
+            <h3 class="title-card"> Direito Trabalhista </h3>
+
+            <ul>
+                <li>Registros de marcas e de direitos autorais, incluindo liberações e permissões de uso.</li>
+                <li> Revisão dos contratos estratégicos de risco, adequando-os à Lei 13.429/2017.</li>
+                <li> Gestão de informações e relatórios de forma sistêmica em plataforma acessível ao cliente.</li>
+                <li>Administração de passivo tributário.</li>
+                <li>Atuação judicial em ações regressivas promovidas em decorrência de benefícios acidentários.</li>
+            </ul>
+        </div>
+
+
+        <div class="card">
+            <h3 class="title-card"> Direito do Consumidor </h3>
+
+            <ul>
+                <li>Relatórios gerenciais que permitem uma visão estratégica dos fluxos.</li>
+                <li>Orientação jurídica para solução de conflitos entre empresas e consumidores.</li>
+                <li>Estudos de análise de risco legal.</li>
+                <li>Consultas e pareceres sobre questões pontuais que envolvam as relações de consumo.</li>
+                <li>Assessoria preventiva em empresas para diminuição de ações movidas por consumidores.</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="bottom-box">
+        <h2 id="bottom-title"> Sobre Nós</h2>
+        <p class="lower-paragraph">
+            Somos um escritório moderno, versátil e dinâmico, cujo objetivo é levar
+            soluções criativas e eficazes aos clientes, tendo como sócios o Dr. Kleber Bissolatti e a Dra. Monique
+            Antonacci, profissionais multidisciplinares com sólida formação e vasta experiência em questões de grande complexidade.
+            <br>
+            Peliciotti Advocacia é um escritório que preza pela qualidade dos serviços jurídicos, com amplo conhecimento
+            e experiência de atuação.
+            <br>
+            <br>
+            Contamos com uma equipe de profissionais experientes para atender nossos clientes de
+            forma personalizada, contemplando as diversas áreas do Direito.
+            <br>
+            Nosso escritório está comprometido em ter os melhores profissionais, advogados, colaboradores e parceiros,
+            empenhados em oferecer seus serviços com grande sensibilidade e comprometimento, com a mais alta competência e comunicação com os clientes.
+            Praticamos a lei com vocação e paixão pela profissão para responder com excelência à confiança depositada em
+            nós pelos nossos clientes.
+        </p>
+    </footer>
+</body>
+
+<script>
+
+let formulario = document.getElementById("formulario-contato")
+
+function chameOFormulario(){
+    formulario.className = "mostrar-formulario"
+}
+
+
+
+</script>
+
+</html>
